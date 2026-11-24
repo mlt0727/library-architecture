@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#faf7ef">
+<title>Library Architecture, Zoomable · one canvas you can keep zooming into</title><meta name="description" content="From a three-person class project to a multi-campus library platform: zoom into one canvas to watch load balancing, caching, microservices and message queues at work, each box with minimal code and the products that offer it.">
+<link rel="stylesheet" href="app.css"></head>
+<body>
+<canvas id="world" tabindex="0"></canvas>
+<header id="bar">
+  <a class="brand" href="#"><svg viewBox="0 0 43 40" width="30" height="28" aria-hidden="true"><g stroke="#27354b" stroke-width="1.6" stroke-linejoin="round"><path fill="#f6b254" d="m4 24 22-6 14 5-22 9z"/><path fill="#fff9ec" d="m4 25 14 5 22-7v4l-22 8-14-5z"/><path fill="#74bbaa" d="m4 16 22-6 14 5-22 9z"/><path fill="#fffcf3" d="m4 17 14 5 22-7v4l-22 8-14-5z"/></g></svg><span></span></a>
+  <nav id="crumbs" aria-label="breadcrumb"></nav><span class="sp"></span>
+  <button id="b-toc" aria-pressed="false"></button><button id="b-pause" aria-pressed="false"></button>
+  <a id="b-lang" href="#"></a><a id="b-src" href="https://www.douyin.com/video/7710506054701960463" target="_blank" rel="noopener"></a>
+</header>
+<nav id="toc" hidden></nav>
+<aside id="panel" hidden></aside>
+<div id="zoom"><button data-z="in">+</button><button data-z="out">−</button><button data-z="home">⌂</button></div>
+<div id="hint"></div>
+<script src="world.js"></script><script src="scenes.js"></script><script src="engine.js"></script>
+</body></html>
